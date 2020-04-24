@@ -9,7 +9,7 @@ import { faCopyright } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Container = styled.div`
-  position: absolute;
+  position: fixed;
   bottom: 0px;
   width: 100%;
   padding: 10px 0px;

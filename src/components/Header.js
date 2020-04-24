@@ -1,18 +1,23 @@
 import React from 'react';
 // import { Link } from 'react-router-dom';
-import { Nav, Navbar, Button } from 'react-bootstrap';
 import styled from 'styled-components';
+import { Nav, Navbar, Button } from 'react-bootstrap';
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const StyledNavbar = styled(Navbar)`
+  position: fixed;
+  width: 100%;
   padding: 15px 10px 15px 120px;
   font-size: 1.5rem;
+  z-index: 1;
   /* 휴대폰 사이즈로 줄어들면 padding 조정하자 */
 `;
 
 const StyledNavLink = styled.span`
   margin: auto 0;
   margin-left: 40px;
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: grey;
   cursor: pointer;
   :hover {
@@ -41,7 +46,9 @@ const Header = () => {
           <StyledNavLink>ANIMALS</StyledNavLink>
           <StyledNavLink>SURRENDERING</StyledNavLink>
           <StyledNavLink>ANIMAL HOTEL</StyledNavLink>
-          <StyledButton>Donate -></StyledButton>
+          <StyledButton>
+            Donate <FontAwesomeIcon icon={faArrowRight} />
+          </StyledButton>
         </Nav>
       </Navbar.Collapse>
     </StyledNavbar>
