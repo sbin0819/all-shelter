@@ -1,15 +1,16 @@
 import React from 'react';
 import styled from 'styled-components';
+import Cards from '../components/Cards';
 
 const Container = styled.div`
-  position: relative;
-  top: 90px;
+  position: absolute;
+  top: 95px;
 `;
 
 const Animal = () => {
   return (
     <Container>
-      <div>동물</div>
+      <Cards />
     </Container>
   );
 };
