@@ -12,7 +12,7 @@ const Container = styled.div`
   position: fixed;
   bottom: 0px;
   width: 100%;
-  padding: 10px 0px;
+  padding: 8px 0px;
   background-color: #f2f4f3;
   display: flex;
   color: grey;
@@ -22,7 +22,7 @@ const Container = styled.div`
 const InnerContainer = styled.div`
   display: flex;
   margin: auto 10px;
-  margin-left: 150px;
+  margin-left: 100px;
   span {
     margin: auto 10px;
   }

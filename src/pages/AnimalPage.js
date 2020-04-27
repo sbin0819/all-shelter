@@ -2,16 +2,16 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Container = styled.div`
-  height: 95vh;
-  background-color: lightyellow;
+  position: relative;
+  top: 90px;
 `;
 
-const AboutUs = () => {
+const Animal = () => {
   return (
     <Container>
-      <div>Adoption</div>
+      <div>동물</div>
     </Container>
   );
 };
 
-export default AboutUs;
+export default Animal;

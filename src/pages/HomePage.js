@@ -1,9 +1,10 @@
 import React from 'react';
 // import styled from 'styled-components';
 
-import AboutUs from '../components/AboutUs';
-import Adoption from '../components/Adoption';
-import Animals from '../components/Animals';
+import Summary from '../components/Randing/Summary';
+import AboutUs from '../components/Randing/AboutUs';
+import Adoption from '../components/Randing/Adoption';
+import Animals from '../components/Randing/Animals';
 
 // const Container = styled.div`
 //   overflow: hidden;
@@ -12,6 +13,7 @@ import Animals from '../components/Animals';
 const HomePage = () => {
   return (
     <>
+      <Summary />
       <AboutUs />
       <Adoption />
       <Animals />

@@ -1,5 +1,5 @@
 import React from 'react';
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import { Nav, Navbar, Button } from 'react-bootstrap';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
@@ -14,7 +14,7 @@ const StyledNavbar = styled(Navbar)`
   /* 휴대폰 사이즈로 줄어들면 padding 조정하자 */
 `;
 
-const StyledNavLink = styled.span`
+const StyledNavLink = styled(Link)`
   margin: auto 0;
   margin-left: 40px;
   font-size: 1rem;
@@ -41,11 +41,11 @@ const Header = () => {
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav>
-          <StyledNavLink>ABOUT US</StyledNavLink>
-          <StyledNavLink>ADOPTION</StyledNavLink>
-          <StyledNavLink>ANIMALS</StyledNavLink>
-          <StyledNavLink>SURRENDERING</StyledNavLink>
-          <StyledNavLink>ANIMAL HOTEL</StyledNavLink>
+          <StyledNavLink to="/animals">ABOUT US</StyledNavLink>
+          <StyledNavLink to="/animals">ADOPTION</StyledNavLink>
+          <StyledNavLink to="/animals">ANIMALS</StyledNavLink>
+          <StyledNavLink to="/animals">SURRENDERING</StyledNavLink>
+          <StyledNavLink to="/animals">ANIMAL HOTEL</StyledNavLink>
           <StyledButton>
             Donate <FontAwesomeIcon icon={faArrowRight} />
           </StyledButton>
