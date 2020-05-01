@@ -1,19 +1,15 @@
 import React from 'react';
+import { withRouter } from 'react-router-dom';
 import styled from 'styled-components';
 import { Card, Button } from 'react-bootstrap';
 
 import PET_DATA from '../data/pet.data';
 
-const Container = styled.div`
-  /* position: relative; */
-`;
-
 const CardContainer = styled.div`
-  /* position: absolute;
-  margin: 0 auto; */
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: 10px;
+  margin-bottom: 100px;
+  margin-left: 15px;
 `;
 
 const StyledCard = styled(Card.Img)`
@@ -22,12 +18,12 @@ const StyledCard = styled(Card.Img)`
   object-fit: cover;
 `;
 
-const Cards = () => {
+const Cards = ({ history, match }) => {
   return (
-    <Container>
+    <>
       <CardContainer>
         {PET_DATA.map((pet) => (
-          <Card key={pet.id} style={{ width: '18rem', margin: '5px 5px' }}>
+          <Card key={pet.id} style={{ width: '20rem', margin: '15px 2px' }}>
             <StyledCard src={pet.imageUrl} />
             <Card.Body>
               <Card.Title>{pet.name}</Card.Title>
@@ -35,13 +31,15 @@ const Cards = () => {
                 Some quick example text to build on the card title and make up
                 the bulk of the card's content.
               </Card.Text>
-              <Button variant="primary">Go somewhere</Button>
+              <Button onClick={() => history.push(`${match.url}/${pet.id}`)}>
+                Go somewhere
+              </Button>
             </Card.Body>
           </Card>
         ))}
       </CardContainer>
-    </Container>
+    </>
   );
 };
 
-export default Cards;
+export default withRouter(Cards);

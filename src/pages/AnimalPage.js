@@ -10,6 +10,9 @@ const Container = styled.div`
 const Animal = () => {
   return (
     <Container>
+      <div>
+        <h1>animals</h1>
+      </div>
       <Cards />
     </Container>
   );
