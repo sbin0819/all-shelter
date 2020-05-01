@@ -1,18 +1,17 @@
 import React from 'react';
 import styled from 'styled-components';
-import Cards from '../components/AnimalCards';
 
 const Container = styled.div`
-  position: relative;
+  position: absolute;
   top: 95px;
 `;
 
-const Animal = () => {
+const Adoption = () => {
   return (
     <Container>
-      <Cards />
+      <div>adoption</div>
     </Container>
   );
 };
 
-export default Animal;
+export default Adoption;

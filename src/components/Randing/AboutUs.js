@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 const Container = styled.div`
@@ -55,11 +56,20 @@ const RightContainer = styled.div`
   }
 `;
 
+const StyledLink = styled(Link)`
+  color: #478d4c;
+  font-size: 1.1rem;
+  font-weight: 500;
+  :hover {
+    cursor: pointer;
+  }
+`;
+
 const AboutUs = () => {
   return (
     <Container>
       <InnerContainer>
-        <LeftContainer></LeftContainer>
+        <LeftContainer>동영상</LeftContainer>
         <RightContainer>
           <h1>
             about us<span>.</span>
@@ -74,7 +84,7 @@ const AboutUs = () => {
             back to community with our resourses and knowledge.
           </h4>
           <h4>Want to find about us more?</h4>
-          <p>Click here --></p>
+          <StyledLink to="/about">Click here --></StyledLink>
         </RightContainer>
       </InnerContainer>
     </Container>

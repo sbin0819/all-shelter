@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 const Container = styled.div`
@@ -57,6 +58,15 @@ const RightContainer = styled.div`
   }
 `;
 
+const StyledLink = styled(Link)`
+  color: #478d4c;
+  font-size: 1.1rem;
+  font-weight: 500;
+  :hover {
+    cursor: pointer;
+  }
+`;
+
 const Adoption = () => {
   return (
     <Container>
@@ -76,7 +86,7 @@ const Adoption = () => {
             a good fit for you.
           </h4>
           <h4>Want to find about adoption process more?</h4>
-          <p>Click here --></p>
+          <StyledLink to="/adoption">Click here --></StyledLink>
         </LeftContainer>
         <RightContainer>
           <img src="/images/adoption.jpg" alt="" />

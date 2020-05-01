@@ -41,8 +41,8 @@ const Header = () => {
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav>
-          <StyledNavLink to="/animals">ABOUT US</StyledNavLink>
-          <StyledNavLink to="/animals">ADOPTION</StyledNavLink>
+          <StyledNavLink to="/about">ABOUT US</StyledNavLink>
+          <StyledNavLink to="/adoption">ADOPTION</StyledNavLink>
           <StyledNavLink to="/animals">ANIMALS</StyledNavLink>
           <StyledNavLink to="/animals">SURRENDERING</StyledNavLink>
           <StyledNavLink to="/animals">ANIMAL HOTEL</StyledNavLink>

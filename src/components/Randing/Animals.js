@@ -72,6 +72,9 @@ const StyledLink = styled(Link)`
   color: #478d4c;
   font-size: 1.1rem;
   font-weight: 500;
+  :hover {
+    cursor: pointer;
+  }
 `;
 
 const Animals = () => {
