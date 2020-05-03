@@ -6,6 +6,8 @@ const PET_DAT = [
     imageUrl:
       'https://images.unsplash.com/photo-1561037404-61cd46aa615b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60',
     price: 25,
+    available: true,
+    text: `Soondol was born in a house which had sold dogs to a dog meat restaurant.He was once adopted, but due to the owner’s personal circumstances, he was abandoned again.Soondol is very smart and gentle.`,
   },
   {
     id: 2,
@@ -14,6 +16,8 @@ const PET_DAT = [
     imageUrl:
       'https://images.unsplash.com/photo-1552053831-71594a27632d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60',
     price: 25,
+    available: true,
+    text: `Soondol was born in a house which had sold dogs to a dog meat restaurant.He was once adopted, but due to the owner’s personal circumstances, he was abandoned again.Soondol is very smart and gentle.`,
   },
   {
     id: 3,
@@ -22,6 +26,8 @@ const PET_DAT = [
     imageUrl:
       'https://images.unsplash.com/photo-1520087619250-584c0cbd35e8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60',
     price: 25,
+    available: true,
+    text: `Soondol was born in a house which had sold dogs to a dog meat restaurant.He was once adopted, but due to the owner’s personal circumstances, he was abandoned again.Soondol is very smart and gentle.`,
   },
   {
     id: 4,
@@ -30,6 +36,8 @@ const PET_DAT = [
     imageUrl:
       'https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60',
     price: 25,
+    available: true,
+    text: `Soondol was born in a house which had sold dogs to a dog meat restaurant.He was once adopted, but due to the owner’s personal circumstances, he was abandoned again.Soondol is very smart and gentle.`,
   },
   {
     id: 5,
@@ -38,6 +46,8 @@ const PET_DAT = [
     imageUrl:
       'https://images.unsplash.com/photo-1513360371669-4adf3dd7dff8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60',
     price: 25,
+    available: true,
+    text: `Soondol was born in a house which had sold dogs to a dog meat restaurant.He was once adopted, but due to the owner’s personal circumstances, he was abandoned again.Soondol is very smart and gentle.`,
   },
   {
     id: 6,
@@ -46,6 +56,7 @@ const PET_DAT = [
     imageUrl:
       'https://images.unsplash.com/photo-1573865526739-10659fec78a5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60',
     price: 25,
+    text: `Soondol was born in a house which had sold dogs to a dog meat restaurant.He was once adopted, but due to the owner’s personal circumstances, he was abandoned again.Soondol is very smart and gentle.`,
   },
   {
     id: 7,
@@ -54,6 +65,8 @@ const PET_DAT = [
     imageUrl:
       'https://images.unsplash.com/photo-1534521304921-99d19068d8aa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60',
     price: 25,
+    available: true,
+    text: `Soondol was born in a house which had sold dogs to a dog meat restaurant.He was once adopted, but due to the owner’s personal circumstances, he was abandoned again.Soondol is very smart and gentle.`,
   },
   {
     id: 8,
@@ -62,6 +75,8 @@ const PET_DAT = [
     imageUrl:
       'https://images.unsplash.com/photo-1491485880348-85d48a9e5312?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60',
     price: 25,
+    available: true,
+    text: `Soondol was born in a house which had sold dogs to a dog meat restaurant.He was once adopted, but due to the owner’s personal circumstances, he was abandoned again.Soondol is very smart and gentle.`,
   },
   {
     id: 9,
@@ -70,6 +85,8 @@ const PET_DAT = [
     imageUrl:
       'https://images.unsplash.com/uploads/1412433710756bfa9ec14/d568362b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60',
     price: 25,
+    available: true,
+    text: `Soondol was born in a house which had sold dogs to a dog meat restaurant.He was once adopted, but due to the owner’s personal circumstances, he was abandoned again.Soondol is very smart and gentle.`,
   },
 ];
 
