@@ -3,13 +3,19 @@ import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 const Container = styled.div`
+  width: 100%;
+  height: 100%;
   display: flex;
-  height: 95vh;
 `;
 
 const InnerContainer = styled.div`
   display: flex;
   margin: 20px auto;
+  justify-content: center;
+  @media (max-width: 820px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 `;
 
 const LeftContainer = styled.div`

@@ -5,7 +5,6 @@ import {
   faInstagramSquare,
   faTwitterSquare,
 } from '@fortawesome/free-brands-svg-icons';
-import { faCopyright } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Container = styled.div`
@@ -21,10 +20,15 @@ const Container = styled.div`
 
 const InnerContainer = styled.div`
   display: flex;
-  margin: auto 10px;
-  margin-left: 100px;
-  span {
-    margin: auto 10px;
+  margin: 0 auto;
+  justify-content: center;
+  div {
+    margin: 3px 20px;
+  }
+  .sub {
+    @media (max-width: 820px) {
+      display: none;
+    }
   }
 `;
 
@@ -37,15 +41,12 @@ const Footer = () => {
   return (
     <Container>
       <InnerContainer>
-        <IconStyled icon={faCopyright} size="2x" />
-        <span>Copyright 2020 sbinha</span>
-      </InnerContainer>
-      <InnerContainer>Privacy Policy | Teams & Condition</InnerContainer>
-      <InnerContainer>
-        <span>+82-123-4567</span>
-        <IconStyled icon={faFacebookSquare} size="2x" />
-        <IconStyled icon={faInstagramSquare} size="2x" />
-        <IconStyled icon={faTwitterSquare} size="2x" />
+        <div>Inspire By Maryana_Kons</div>
+        <div className="sub">Privacy Policy | Teams & Condition</div>
+        <div className="sub">+123-456-789</div>
+        <IconStyled className="sub" icon={faFacebookSquare} size="2x" />
+        <IconStyled className="sub" icon={faInstagramSquare} size="2x" />
+        <IconStyled className="sub" icon={faTwitterSquare} size="2x" />
       </InnerContainer>
     </Container>
   );

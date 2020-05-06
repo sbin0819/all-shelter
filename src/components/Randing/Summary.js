@@ -5,15 +5,19 @@ import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Container = styled.div`
-  position: relative;
   display: flex;
-  top: 76px;
-  height: 95vh;
+  width: 100%;
+  height: 100%;
 `;
 
 const InnerContainer = styled.div`
   display: flex;
-  margin: 20px auto;
+  margin: 80px auto;
+  justify-content: center;
+  @media (max-width: 820px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 `;
 
 const LeftContainer = styled.div`
